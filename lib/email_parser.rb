@@ -17,5 +17,4 @@ class EmailParser
     Set.new(clean_mail_array).to_a
   end
 
-
 end
