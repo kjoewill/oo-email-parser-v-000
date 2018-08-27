@@ -16,6 +16,7 @@ class EmailParser
     puts mail_array.inspect 
     clean_mail_array = mail_array.delete_if { |e| e == ""}
     clean_mail_array
+    Set.new(clean_mail_array).to_a
   end
 
 
