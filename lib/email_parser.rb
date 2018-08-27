@@ -15,7 +15,7 @@ class EmailParser
     mail_array = emails.split(/[ ,]/)
     puts mail_array.inspect 
     clean_mail_array = mail_array.delete_if { |e| e == ""}
-    puts clean_mail_array.inspect
+    clean_mail_array
   end
 
 
