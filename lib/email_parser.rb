@@ -12,14 +12,22 @@ class EmailParser
   end
 
   def parse
-    
+    if emails.comma_delimited
+      parse_comma_delimited
+    else
+      parse_space_delimited
   end
 
 
   private
+  
+  def parse_comma_delimited
+    mail_array = emails.split(",")
+    mail_array.collect { |e| each }
+    
 
   def comma_delimited?
-    emails.detect(",")
+    emails.include?(",")
   end
 
 end
