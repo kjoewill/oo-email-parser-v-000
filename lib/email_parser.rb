@@ -28,7 +28,7 @@ class EmailParser
   end
     
   def parse_space_delimited
-    mail_array = emails.split(" ")
+    mail_array = emails.split("[\s,]")
     mail_array.collect { |e| e.strip }
   end
 
