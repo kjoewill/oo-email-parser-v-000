@@ -12,7 +12,7 @@ class EmailParser
   end
 
   def parse
-    mail_array = emails.split(/[ ,]/).reject
+    mail_array = emails.split(/[ ,]/).delete_if { |e| e == ""}
     puts mail_array.inspect
   end
 
