@@ -24,7 +24,7 @@ class EmailParser
   
   def parse_comma_delimited
     mail_array = emails.split(",")
-    mail_array.collect { |e| each.strip }
+    mail_array.collect { |e| e.strip }
   end
     
   def parse_space_delimited
