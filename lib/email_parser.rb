@@ -16,6 +16,7 @@ class EmailParser
       parse_comma_delimited
     else
       parse_space_delimited
+    end
   end
 
 
