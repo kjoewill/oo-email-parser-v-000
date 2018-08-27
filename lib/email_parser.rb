@@ -20,10 +20,4 @@ class EmailParser
   end
 
 
-  private
-
-  def comma_delimited?
-    emails.include?(",")
-  end
-
 end
