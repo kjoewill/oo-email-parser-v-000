@@ -13,8 +13,7 @@ class EmailParser
 
   def parse
     mail_array = emails.split(/[ ,]/)
-    clean_mail_array = mail_array.delete_if { |e| e == ""}
-    clean_mail_array
+    clean_mail_array = mail_array.delete_if { |e| e == "" }
     Set.new(clean_mail_array).to_a
   end
 
