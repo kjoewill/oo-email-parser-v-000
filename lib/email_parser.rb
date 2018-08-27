@@ -12,7 +12,7 @@ class EmailParser
   end
 
   def parse
-    if comma_delimited(emails)?
+    if comma_delimited?
       parse_comma_delimited
     else
       parse_space_delimited
