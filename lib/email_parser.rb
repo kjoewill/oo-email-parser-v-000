@@ -12,21 +12,12 @@ class EmailParser
   end
 
   def parse
-    
+    mail_array = emails.split(/[ ,]/)
+    puts mail_array.inspect
   end
 
 
   private
-  
-  def parse_comma_delimited
-    mail_array = emails.split(/[ ,]/) #/[\s,]/
-    mail_array.collect { |e| e.strip }
-  end
-    
-  def parse_space_delimited
-    mail_array = emails.split(/[ ,]/)
-    mail_array.collect { |e| e.strip }
-  end
 
   def comma_delimited?
     emails.include?(",")
